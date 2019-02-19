@@ -1,0 +1,38 @@
+.item{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 323px;
+    height: 377px;
+    box-shadow: -2.5px 15.8px 68px #B49D7f48;
+    .item-name{
+        font-size: $f-18;
+        font-weight: 600;
+        margin: 40px 0 0;
+    }
+    .subtext{
+        color: $primary_text_color;
+        font-size: $f-12;
+
+    }
+    .bottom-panel{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price{
+            .new{
+                font-size: $f-18;
+                font-weight: 600;
+            }
+            .old{
+                text-decoration: line-through;
+                font-size: $f-12;
+                color: $gray;
+            }
+        }
+    }
+}

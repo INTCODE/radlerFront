@@ -1,0 +1,23 @@
+nav{
+    ul{
+        list-style: none;
+        @extend .row;
+        li{
+            padding: 10px;
+            @extend .col-md-4;
+            text-align: center;
+            &.active a{
+                color: #000;
+            }
+            a{
+                letter-spacing: 2px;
+                font-weight: 600;
+                color: $primary_text_color;
+                font-size:$f-13;
+                text-transform: uppercase;
+                
+            } 
+        }
+    }
+
+}
