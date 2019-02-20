@@ -5,9 +5,7 @@ header{
         font-size: $f-12;
         padding: 30px 0;
         >div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-row(center, center)
         }
      #logo{
          @extend .col-md-2;

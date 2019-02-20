@@ -1,13 +1,22 @@
 .item{
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column(center, center);
     padding: 20px;
     width: 323px;
     height: 377px;
     box-shadow: -2.5px 15.8px 68px #B49D7f48;
+    position: relative;
+    &.promo::before{
+        content: url('../assets/img/promo.png');
+        background-color: $green;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
     .item-name{
         font-size: $f-18;
         font-weight: 600;
@@ -18,11 +27,14 @@
         font-size: $f-12;
 
     }
+    .top-panel{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
     .bottom-panel{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-row(space-between, center);
         .price{
             .new{
                 font-size: $f-18;
