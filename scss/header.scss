@@ -8,10 +8,11 @@ header{
             @include flex-row(center, center)
         }
      #logo{
-         @extend .col-md-2;
+         @extend .col-lg-2;
+         margin-bottom: 10px;
         }
     #store_list{
-        @extend .col-md-3;
+        @extend .col-lg-3;
         label{
             @extend .round-horizontal-box;
             @extend .select;
@@ -24,7 +25,7 @@ header{
         }
     }
     #account{
-        @extend .col-md-4;
+        @extend .col-lg-4;
         #my_account{
             font-weight: 600;
             padding: 0 25px;

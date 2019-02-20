@@ -5,6 +5,15 @@ $('.carousel').slick({
     autoplaySpeed:5000,
 });
 
+$('.center-mode-slider').slick({
+    arrows:false,
+    autoplay:true,
+    swipeToSlide:true,
+    autoplaySpeed:5000,
+    centerMode:true,
+    slidesToShow: 5,
+});
+
 function customInputNumberInit(){
     var inputsNumber = document.querySelectorAll('.custom-input-number');
     inputsNumber.forEach(function(item){

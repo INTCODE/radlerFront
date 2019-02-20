@@ -4,10 +4,10 @@ nav{
         @extend .row;
         li{
             padding: 10px;
-            @extend .col-md-4;
+            @extend .col-lg-4;
             text-align: center;
             &.active a{
-                color: #000;
+                // color: #000;
             }
             a{
                 letter-spacing: 2px;

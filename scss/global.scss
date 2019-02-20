@@ -21,10 +21,15 @@
     justify-content: $justify;
     align-items: $align;
 }
+$body_background_color:#f6f3f1;
 $primary_text_color: #CFA773;
+$secondary_text_color: #ddc8a9;
 $primary_bg_color: #EFE9E6;
 $secondary_bg_color: #EADFCF;
+$third_bg_color:#efeae6;
 $green:#1C6441;
+$lightgreen:#266e4b;
+$darkgreen:#165737;
 $gray: #929292;
 $f-15: 0.9375rem;
 $f-13: 0.8125rem;
@@ -36,10 +41,11 @@ $f-18: 1.125rem;
 }
 .wrapper{
     max-width: 1460px;
+    width: 98%;
     margin: auto!important;
 }
 body{
-    background-color: $primary_bg_color;
+    background-color: $body_background_color;
 }
 h1{
     font-size: 58px;
@@ -48,6 +54,7 @@ h1{
 h2{
     font-size:$f-18;
     font-weight: 600;
+    padding-bottom: 30px;
 }
 a{
     color: #000;
@@ -63,6 +70,9 @@ a{
     &:hover{
         color: $primary_text_color;
     }
+}
+.cirlce-btn{
+    border-radius: 50%;
 }
 .btn-green{
     background-color: $green;
@@ -99,8 +109,10 @@ section{
     @include flex-row(center,center);
     input[type="number"]{
         appearance: textfield;
-        width: 30px;
+        width: 40px;
+        height: 40px;
         text-align: center;
+        border: 1px solid $third_bg_color;
     }
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button
@@ -111,11 +123,12 @@ section{
     .increment, .decrement{
         @include flex-row(center,center);
         color: $primary_text_color;
-        background-color: $secondary_bg_color;
+        background-color: $third_bg_color;
         font-weight: 700;
-        width: 20px;
-        height: 30px;
+        width: 30px;
+        height: 40px;
         margin-right: 1px;
+        font-size: $f-18;
         cursor: pointer;
         user-select: none;
     }
@@ -124,7 +137,6 @@ section{
     position: relative;
     width: 60px;
     height: 30px;
-    padding: 5px;
     background-color: $primary_bg_color;
     border-radius: 25px;
     input[type="checkbox"]{
@@ -136,6 +148,8 @@ section{
         height: 100%;
     }
     .switch-body{
+        border: 2px solid $primary_bg_color;
+        border-radius: 25px;
         position: absolute;
         top: 0;
         left: 0;
@@ -176,10 +190,20 @@ section{
     .icons{
         @include flex-row(space-between, center);
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        top: -2px;
+        left: 2px;
+        right: 0;
+        width: 45px;
+        margin: auto;
         height: 100%;
-        padding: 0 5px;
+    }
+}
+.center-mode-slider{
+    .slick-slide{
+        transition: 300ms;
+        &:not(.slick-center){
+            opacity: .5;
+            transform: scale(.8);
+        }
     }
 }
