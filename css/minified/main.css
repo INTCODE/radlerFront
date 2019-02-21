@@ -8460,12 +8460,20 @@ header {
             font-size: 0.9375rem;
             color: #CFA773; }
         header .wrapper #account #basket .dropdown {
+          position: absolute;
           width: 100%;
-          height: 0;
-          overflow: hidden;
-          padding: 0; }
+          padding-top: 5px;
+          -webkit-transition: 300ms;
+          transition: 300ms; }
           header .wrapper #account #basket .dropdown .btn {
             width: 100%; }
+        header .wrapper #account #basket.active .top .icon {
+          background-color: #e53737; }
+        header .wrapper #account #basket.active .top .amount {
+          color: #e53737;
+          font-weight: 600; }
+        header .wrapper #account #basket.active .dropdown {
+          height: 200px; }
 
 @media (max-width: 1180px) {
   header .wrapper #account {
