@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin-ext';
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./global.scss";
 @import "./nav.scss";
@@ -7,6 +7,8 @@
 @import "./item.scss";
 @import "./know_us.scss";
 @import "./popular_products.scss";
+@import "./product_page.scss";
 @import "./see_all_products.scss";
 @import "./similar.scss";
+@import "./basket_item.scss";
 @import "./footer.scss";

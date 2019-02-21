@@ -19,3 +19,15 @@
         }
     }
 }
+@media (max-width:991px){
+    #see_all_products{
+        .wrapper{
+            text-align: center;
+            background-image: none;
+            .btn-box{
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
