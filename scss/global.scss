@@ -8,6 +8,10 @@
     align-items: center;
     width: 30px;
     height: 30px;
+    svg{
+        width: 13px;
+        height: 13px;
+        }
 }
 @mixin flex-row($justify, $align) {
     display: flex;
@@ -79,6 +83,7 @@ a{
     }
 }
 .btn{
+    display: inline-block;
     text-transform: uppercase;
     padding: 10px 40px;
     border:none;
@@ -244,6 +249,11 @@ section{
         &:not(.slick-center){
             opacity: .5;
             transform: scale(.8);
+        }
+        &.slick-center{
+            text-align: center;
+            position: relative;
+            z-index: 9;
         }
     }
 }

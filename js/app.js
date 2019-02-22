@@ -1,17 +1,42 @@
+//BASKET OPEN
+var basketDropdown = document.querySelector('header #basket');
+basketDropdown.addEventListener('click',function(){
+    if(basketDropdown.classList.contains('active')){
+        basketDropdown.classList.remove('active')
+    }else{
+        basketDropdown.classList.add('active')
+    }
+})
+
 $('.carousel').slick({
     dots:true,
     arrows:false,
     autoplay:true,
     autoplaySpeed:5000,
+    
 });
 
 $('.center-mode-slider').slick({
     arrows:false,
-    autoplay:true,
+    autoplay:false,
     swipeToSlide:true,
     autoplaySpeed:5000,
     centerMode:true,
     slidesToShow: 5,
+    centerPadding:'0px',
+    responsive:[{
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        }
+    },
+    {
+        breakpoint:767,
+        settings:{
+            slidesToShow: 1,
+        }
+    }
+]
 });
 
 function customInputNumberInit(){

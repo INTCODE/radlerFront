@@ -7057,6 +7057,7 @@ a {
     text-decoration: none; }
 
 .btn {
+  display: inline-block;
   text-transform: uppercase;
   padding: 10px 40px;
   border: none;
@@ -7209,6 +7210,10 @@ section {
   .center-mode-slider .slick-slide:not(.slick-center) {
     opacity: .5;
     transform: scale(0.8); }
+  .center-mode-slider .slick-slide.slick-center {
+    text-align: center;
+    position: relative;
+    z-index: 9; }
 
 nav ul {
   list-style: none;
@@ -7267,6 +7272,8 @@ header {
         header .wrapper #account #my_account img {
           padding-right: 20px; }
       header .wrapper #account #basket {
+        user-select: none;
+        cursor: pointer;
         position: relative;
         background-color: #f6f3f1;
         border-radius: 25px;
@@ -7295,14 +7302,20 @@ header {
             justify-content: center;
             align-items: center;
             width: 30px;
-            height: 30px; }
+            height: 30px;
+            transition: 300ms; }
+            header .wrapper #account #basket .top .icon svg {
+              width: 13px;
+              height: 13px; }
           header .wrapper #account #basket .top .price {
             font-size: 0.9375rem;
             padding: 0 50px 0 20px;
             font-weight: 600; }
           header .wrapper #account #basket .top .amount {
+            transition: 300ms;
             font-size: 0.9375rem;
-            color: #CFA773; }
+            color: #CFA773;
+            font-weight: 600; }
         header .wrapper #account #basket .dropdown {
           border-radius: 25px;
           position: absolute;
@@ -7310,17 +7323,22 @@ header {
           background-color: #f6f3f1;
           z-index: 3;
           width: 100%;
-          padding: 45px 8px 8px;
+          max-height: 0;
+          overflow: hidden;
+          padding: 37px 8px 8px;
           transition: 300ms; }
           header .wrapper #account #basket .dropdown .btn {
             width: 100%; }
+            header .wrapper #account #basket .dropdown .btn.btn-green {
+              margin-top: 10px; }
         header .wrapper #account #basket.active .top .icon {
           background-color: #e53737; }
+          header .wrapper #account #basket.active .top .icon svg {
+            fill: #fff; }
         header .wrapper #account #basket.active .top .amount {
-          color: #e53737;
-          font-weight: 600; }
+          color: #e53737; }
         header .wrapper #account #basket.active .dropdown {
-          height: 200px; }
+          max-height: 600px; }
 
 @media (max-width: 1180px) {
   header .wrapper #account {
@@ -7370,6 +7388,11 @@ header {
       background-color: #1C6441; }
     .slick-dots li button {
       display: none; }
+
+@media (max-width: 991px) {
+  #big_slider .slide img {
+    display: block;
+    margin: auto; } }
 
 .item {
   background-color: #fff;
