@@ -8398,6 +8398,7 @@ header {
         header .wrapper #account #my_account img {
           padding-right: 20px; }
       header .wrapper #account #basket {
+        position: relative;
         background-color: #f6f3f1;
         border-radius: 25px;
         display: -webkit-box;
@@ -8423,6 +8424,7 @@ header {
         margin: 0 25px;
         padding: 8px; }
         header .wrapper #account #basket .top {
+          z-index: 4;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -8460,9 +8462,13 @@ header {
             font-size: 0.9375rem;
             color: #CFA773; }
         header .wrapper #account #basket .dropdown {
+          border-radius: 25px;
           position: absolute;
+          top: 0;
+          background-color: #f6f3f1;
+          z-index: 3;
           width: 100%;
-          padding-top: 5px;
+          padding: 45px 8px 8px;
           -webkit-transition: 300ms;
           transition: 300ms; }
           header .wrapper #account #basket .dropdown .btn {
