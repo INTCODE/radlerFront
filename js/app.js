@@ -22,6 +22,7 @@ $('.center-mode-slider').slick({
     swipeToSlide:true,
     autoplaySpeed:5000,
     centerMode:true,
+    focusOnSelect: true,
     slidesToShow: 5,
     centerPadding:'0px',
     responsive:[{
@@ -38,6 +39,22 @@ $('.center-mode-slider').slick({
     }
 ]
 });
+
+$('.gallery .big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.gallery .gallery-list'
+  });
+  $('.gallery .gallery-list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.gallery .big',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 
 function customInputNumberInit(){
     var inputsNumber = document.querySelectorAll('.custom-input-number');

@@ -1,0 +1,24 @@
+.gallery{
+    .big{
+        padding: 30px;
+        >div{
+            height: 90%;
+            text-align: center;
+            max-height: 407px;
+            max-width: 373px;
+        }
+    }
+    .gallery-list{
+        padding:20px 0;
+        margin: 0 30px;
+        border-top: 1px solid #F0E9E0;
+        >div{
+            height: 100%;
+            text-align: center;
+            cursor: pointer;
+            img{
+                max-height: 100px ;
+            }
+        }
+    }
+}
