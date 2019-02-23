@@ -1,0 +1,27 @@
+#product_list{
+    padding: 0;
+    background: linear-gradient( 0deg, rgb(213,182,143) 0%, rgb(233,222,205) 100%);
+    .list-container{
+        @extend .row;
+        .sidebar{
+            @extend .col-lg-2;
+            .category-name{
+                margin: 50px 0 30px;
+                font-size: 42px;
+                font-weight: 600;
+                line-height: .6;
+            }
+        }
+        .product-grid{
+            @extend .col-lg-10;
+            background-color: $body_background_color;
+            padding: 0 70px;
+            .pagination{
+                margin: 20px 0 20px 3px;
+            }
+            .item{
+                margin: 5px 3px;
+            }
+        }
+    }
+}

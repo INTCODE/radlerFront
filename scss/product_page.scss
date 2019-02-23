@@ -1,11 +1,6 @@
 #product_page{
     background: linear-gradient( 0deg, rgb(213,182,143) 0%, rgb(233,222,205) 100%);
     padding: 0;
-    .wrapper::after{
-        content: "";
-        top: 0;
-        right: 0;
-    }
     .product-body{
         position: relative;
         background-color: $body_background_color;
@@ -13,6 +8,19 @@
         .gallery{
             @extend .col-lg-4;
             background-color: #fff;
+            position: relative;
+            &.promo::before{
+                content: url('../../assets/img/promo_black.png');
+                display: block;
+                background-color: $secondary_bg_color;
+                @include flex-row(center, center);
+                border-radius: 50%;
+                position: absolute;
+                left: 25px;
+                top: 25px;
+                height: 70px;
+                width: 70px;
+            }
         }
         .details{
             @extend .col-lg-6;
@@ -34,7 +42,10 @@
                         background-color: $primary_bg_color;
                     }
                     td{
-                        padding: 3px 30px;
+                        padding: 5px 30px;
+                        &:first-child{
+                            font-weight: 600;
+                        }
                     }
                 }
             }
@@ -49,6 +60,7 @@
                justify-content: space-between;
                align-items: center;
                .price{
+                   font-weight: 600;
                    font-size: 32px;
                    line-height: 1;
                }

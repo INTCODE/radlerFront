@@ -1,0 +1,24 @@
+.pagination{
+    @include flex-row(flex-start, center);
+    span{
+        color: #000;
+        opacity: .5;
+        font-weight: 600;
+    }
+    ul{
+        padding-left: 20px;
+        display: flex;
+        li{
+            @include flex-row(center, center);
+            width: 35px;
+            height: 35px;
+            color: #000;
+            opacity: .5;
+            font-weight: 600;
+            &.active{
+                background-color: $primary_bg_color;
+                opacity: 1;
+            }
+        }
+    }
+}
