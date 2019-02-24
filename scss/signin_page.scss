@@ -37,6 +37,11 @@
                     &:nth-child(odd){
                         padding-right: 25px;
                     }
+                    &:nth-child(3){
+                        label{
+                            padding-bottom: 0;
+                        }
+                    }
                     &:last-child{
                         @include flex-row(flex-end, flex-end);
                     }

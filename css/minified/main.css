@@ -9446,6 +9446,8 @@ footer {
           padding: 0; }
           #signin_page .signin-container .right form > div:nth-child(odd) {
             padding-right: 25px; }
+          #signin_page .signin-container .right form > div:nth-child(3) label {
+            padding-bottom: 0; }
           #signin_page .signin-container .right form > div:last-child {
             display: -webkit-box;
             display: -ms-flexbox;
