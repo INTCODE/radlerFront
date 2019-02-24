@@ -33,8 +33,9 @@
             }
             .bottom-panel{
                 width: 100%;
-                @include flex-row(center, center);
+                @include flex-row(flex-end, center);
                 label{
+                    padding: 0;
                     display: flex;
                     span{
                         padding-left: 15px;

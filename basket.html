@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/minified/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div id="logo">
+                <a href="/index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="right-part">
+                <div id="store_list">
+                    <label>
+                        Store:
+                        <select name="store" id="store_select">
+                            <option value="1">
+                                21340   |   John Lethron - Grace's Grocieries
+                            </option>
+                        </select>
+                    </label>
+                </div>
+                <div id="account">
+                    <div id="my_account">
+                        <img src="./assets/img/icons/user.png" alt="">
+                        <a href="#">My Account</a>
+                    </div>
+                    <div id="basket">
+                        <div class="top">
+                            <div class="icon">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                            <g>
+                                <g id="shopping-cart">
+                                    <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
+                                        c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7
+                                        c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408
+                                        c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"/>
+                                </g>
+                            </g>
+                        </svg>
+
+                            </div>
+                            <span class="price">£853,24</span>
+                            <span class="amount">2 items</span>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-green" href="#">Go To Basket</a>
+                            <div class="items-list">
+                                <div class="basket-item">
+                                    <div class="img">
+                                    <img src="./assets/img/product_img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="name">Perła Chmielowa S...</div>
+                                    <div class="custom-input-number">
+                                        <input type="number">
+                                        <span class="increment">+</span>
+                                        <span class="decrement">-</span>
+                                    </div>
+                                    <div class="price">£340</div>
+                                </div>
+                                <span class="btn-remove"></span>
+                                </div>
+                                <div class="basket-item">
+                                <div class="img">
+                                    <img src="./assets/img/product_img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="name">Perła Export 4x6x36...</div>
+                                    <div class="custom-input-number out-of-stock">
+                                        <input type="number">
+                                        <span class="increment">+</span>
+                                        <span class="decrement">-</span>
+                                    </div>
+                                    <div class="price">£180</div>
+                                </div>
+                                <span class="btn-remove"></span>
+                                </div>
+                            </div>
+                            <a href="" class="btn btn-gold">VIEW AND EDIT CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="basket_page">
+        <div class="wrapper">
+            <a class="return-arrow" href="#"></a>
+            <p class="heading">Shopping Cart</p>
+            <div>
+                <div class="basket-list">
+                    <div class="head">
+                        <span>Item</span>
+                        <span>Price</span>
+                        <span>Quantity</span>
+                        <span>Subtotal</span>
+                    </div>
+                    <div class="basket-item">
+                        <div class="img">
+                            <img src="./assets/img/product_img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="name">Perła Chmielowa Strong</p>
+                            <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                        </div>
+                        <div class="price">
+                            £340
+                            <div class="switch">
+                                <input type="checkbox">
+                                <span class="switch-body"></span>
+                                <span class='icons'>
+                                    <span class="left">
+                                        <img src="./assets/img/icons/view_1.png" alt="">
+                                    </span>
+                                    <span class="right">
+                                        <img src="./assets/img/icons/view_2.png" alt="">
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <div class="custom-input-number">
+                                <input type="number">
+                                <span class="increment">+</span>
+                                <span class="decrement">-</span>
+                            </div>
+                        </div>
+                        <div class="subtotal">£340</div>
+                        <span class="btn-remove"></span>
+                    </div>
+                    <div class="basket-item">
+                        <div class="img">
+                            <img src="./assets/img/product_img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="name">Perła Chmielowa Strong</p>
+                            <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                        </div>
+                        <div class="price">
+                            £340
+                            <div class="switch">
+                                <input type="checkbox">
+                                <span class="switch-body"></span>
+                                <span class='icons'>
+                                    <span class="left">
+                                        <img src="./assets/img/icons/view_1.png" alt="">
+                                    </span>
+                                    <span class="right">
+                                        <img src="./assets/img/icons/view_2.png" alt="">
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <div class="custom-input-number">
+                                <input type="number">
+                                <span class="increment">+</span>
+                                <span class="decrement">-</span>
+                            </div>
+                        </div>
+                        <div class="subtotal">£340</div>
+                        <span class="btn-remove"></span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="summary">
+                        <p class="heading">Summary</p>
+                        <div class="borders">
+                        <p>
+                            <span>Subtotal</span>
+                            <span>£780.24</span>
+                        </p>
+                            <p>
+                                <span>Tax</span>
+                                <span>£60.54</span>
+                            </p>
+                        </div>
+                            <p class="total">
+                                <span>Order Total</span>
+                                <span>£840.74</span>
+                            </p>
+                        <div class="shipping">
+                            <span>Estimated Shipping Date:2/5/19</span>
+                        </div>
+                        <a class="btn btn-green" href="#">
+                            Proceed to checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <label class="input-with-button">
+                    <span>Apply Discount Code</span>
+                    <input type="text">
+                    <button class="btn btn-gold btn-rectangle">Apply</button>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section id="similar">
+        <div class="wrapper">
+            <h2>Find more interesting products</h2>
+            <div class="item">
+                    <div class="top-panel">
+                        <div class="switch">
+                            <input type="checkbox">
+                            <span class="switch-body"></span>
+                            <span class='icons'>
+                                <span class="left">
+                                    <img src="./assets/img/icons/view_1.png" alt="">
+                                </span>
+                                <span class="right">
+                                    <img src="./assets/img/icons/view_2.png" alt="">
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-img"><img src="./assets/img/product_img.png" alt=""></div>
+                    <p class="item-name">Perła Chmielowa Strong</p>
+                    <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                    <div class="bottom-panel">
+                        <span class="price">
+                            
+                            <span class="new">£18.99</span>
+                        </span>
+                        <span class="amount-panel">
+                        <div class="custom-input-number">
+                            <input type="number">
+                            <span class="increment">+</span>
+                            <span class="decrement">-</span>
+                        </div>
+                        </span>
+                    </div>
+                    </div><div class="item">
+                    <div class="top-panel">
+                        <div class="switch">
+                            <input type="checkbox">
+                            <span class="switch-body"></span>
+                            <span class='icons'>
+                                <span class="left">
+                                    <img src="./assets/img/icons/view_1.png" alt="">
+                                </span>
+                                <span class="right">
+                                    <img src="./assets/img/icons/view_2.png" alt="">
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-img"><img src="./assets/img/product_img.png" alt=""></div>
+                    <p class="item-name">Perła Chmielowa Strong</p>
+                    <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                    <div class="bottom-panel">
+                        <span class="price">
+                            
+                            <span class="new">£18.99</span>
+                        </span>
+                        <span class="amount-panel">
+                        <div class="custom-input-number">
+                            <input type="number">
+                            <span class="increment">+</span>
+                            <span class="decrement">-</span>
+                        </div>
+                        </span>
+                    </div>
+                    </div><div class="item promo">
+                    <div class="top-panel">
+                        <div class="switch">
+                            <input type="checkbox">
+                            <span class="switch-body"></span>
+                            <span class='icons'>
+                                <span class="left">
+                                    <img src="./assets/img/icons/view_1.png" alt="">
+                                </span>
+                                <span class="right">
+                                    <img src="./assets/img/icons/view_2.png" alt="">
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-img"><img src="./assets/img/product_img.png" alt=""></div>
+                    <p class="item-name">Perła Chmielowa Strong</p>
+                    <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                    <div class="bottom-panel">
+                        <span class="price">
+                            
+                            <span class="new">£18.99</span>
+                        </span>
+                        <span class="amount-panel">
+                        <div class="custom-input-number">
+                            <input type="number">
+                            <span class="increment">+</span>
+                            <span class="decrement">-</span>
+                        </div>
+                        </span>
+                    </div>
+                    </div><div class="item ">
+                    <div class="top-panel">
+                        <div class="switch">
+                            <input type="checkbox">
+                            <span class="switch-body"></span>
+                            <span class='icons'>
+                                <span class="left">
+                                    <img src="./assets/img/icons/view_1.png" alt="">
+                                </span>
+                                <span class="right">
+                                    <img src="./assets/img/icons/view_2.png" alt="">
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-img"><img src="./assets/img/product_img.png" alt=""></div>
+                    <p class="item-name">Perła Chmielowa Strong</p>
+                    <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                    <div class="bottom-panel">
+                        <span class="price">
+                            
+                            <span class="new">£18.99</span>
+                        </span>
+                        <span class="amount-panel">
+                        <div class="custom-input-number">
+                            <input type="number">
+                            <span class="increment">+</span>
+                            <span class="decrement">-</span>
+                        </div>
+                        </span>
+                    </div>
+                    </div><div class="item">
+                    <div class="top-panel">
+                        <div class="switch">
+                            <input type="checkbox">
+                            <span class="switch-body"></span>
+                            <span class='icons'>
+                                <span class="left">
+                                    <img src="./assets/img/icons/view_1.png" alt="">
+                                </span>
+                                <span class="right">
+                                    <img src="./assets/img/icons/view_2.png" alt="">
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-img"><img src="./assets/img/product_img.png" alt=""></div>
+                    <p class="item-name">Perła Chmielowa Strong</p>
+                    <p class="subtext">4x6x330ml | 4.0% NRB</p>
+                    <div class="bottom-panel">
+                        <span class="price">
+                            
+                            <span class="new">£18.99</span>
+                        </span>
+                        <span class="amount-panel">
+                        <div class="custom-input-number">
+                            <input type="number">
+                            <span class="increment">+</span>
+                            <span class="decrement">-</span>
+                        </div>
+                        </span>
+                    </div>
+                    </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="column">
+                <p class="column-title">CUSTOMER SERVICE</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Capital On Tap</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="column-title">THE SMALL PRINT</p>
+                <ul>
+                    <li><a href="#">Deliveries</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <div class="img">
+                    <img src="./assets/img/logo_2.png" alt="">
+                </div>
+                <p>Diamonds & Pearl Trading Ltd. Cromwell Industrial Estate, Unit 43, Staffa Rd, Leyton E10 7QZ | Copyright© 2019</p>
+            </div>
+            <div class="contact">
+                <p>Have any questions? Contact us</p>
+                <p class="number">(+44) 01277 219818</p>
+                <p class="number">(+44) 07886 076847</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+    <script async type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

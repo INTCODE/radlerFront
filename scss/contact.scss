@@ -4,15 +4,15 @@
 }
 .bottom-text{
     font-size: $f-12;
-    color: #000;
-    opacity: .5;
+    color:$opacity-color;
+    font-weight: 600;
 }
 #contact{
     background: linear-gradient( to right, rgb(213,182,143) 0%, rgb(233,222,205) 100%);
     .wrapper{
         @extend .row;
         #contact-info{
-            @extend .col-lg-6;
+            @extend .col-lg-7;
             @extend .row;
             .left{
                 @extend .col-lg-6;
@@ -43,9 +43,9 @@
                 @extend .col-lg-6;
                 div{
                     padding: 10px;
-                    @include round-horizontal-box($secondary_bg_color);
+                    @include round-horizontal-box(#e7d9c6);
                     justify-content: flex-start;
-                    width: 80%;
+                    width: 60%;
                     margin: 15px 0;
                     img{
                         margin-right: 20px;
@@ -56,7 +56,7 @@
             }
         }
         #map{
-            @extend .col-lg-6;
+            @extend .col-lg-5;
         }
     }
 }

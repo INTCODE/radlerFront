@@ -91,82 +91,98 @@
             </div>
         </div>
     </header>
-    <section id="contact">
-        <div class="wrapper">
-            <div id="contact-info">
+    <section id="signin_page">
+        <div class="wrapper right-full">
+            <nav>
+                <ul>
+                    <li class="active">
+                        <a href="">Beer & Cider</a>
+                    </li>
+                    <li>
+                        <a href="">Spirits</a>
+                    </li>
+                    <li>
+                        <a href="">Soft drinks</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="signin-container">
                 <div class="left">
-                    <p class="heading">Contact information</p>
-                    <div class="contact-logo">
-                        <img src="./assets/img/icons/wine.png" alt="">
-                        <span>DIAMONDS & PEARL TRADING LTD.</span>
+                    <div class="signin">
+                        <p class="heading">Sign in</p>
+                        <p class="subtext">If you have an account, sign in your email adress</p>
+                        <form action="" id="signin_form">
+                            <label>
+                                <span>E-mail address*</span>
+                                <input type="text">
+                            </label>
+                            <label>
+                                <span>Password*</span>
+                                <input type="password">
+                            </label>
+                            <div class="bottom">
+                                <a href="#">Forgot your password?</a>
+                                <span>* Required fields</span>
+                            </div>
+                            <input type="submit" class="btn btn-green" value="sing in to account">
+                        </form>
                     </div>
-                    <div class="info">
-                        <p>Address:</p>
-                        <p>Unit 43</p>
-                        <p>Cromwell Industrial Estate</p>
-                        <p>Staffa Rd  |  Leyton</p>
-                        <p>E10 7QZ</p>
-                    </div>
-                    <p class="bottom-text">Company registered in England No. 9274200  |  Vat reg. No. 198361957</p>
                 </div>
                 <div class="right">
-                    <div>
-                        <img src="./assets/img/icons/phone.svg" alt="">
-                        <span>(+44) 01277 219818</span>
-                    </div>
-                    <div>
-                        <img src="./assets/img/icons/phone.svg" alt="">
-                        <span>(+44) 07886 076847</span>
-                    </div>
-                    <div>
-                        <img src="./assets/img/icons/email.svg" alt="">
-                        <span>radler@radleruk.com</span>
+                    <div class="signup">
+                        <p class="heading">Are you new?</p>
+                        <p class="subtext">You can complete the application. If we consider it positively, you will receive an account.</p>
+                        <form action="" id="signup_form">
+                            <div>
+                                <label>
+                                    <span>Company name*</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span>E-mail address*</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span>Company address*</span>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <span>Company representative*</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span>Phone number*</span>
+                                    <input type="text">
+                                </label>
+                                <fieldset>
+                                    <label>
+                                        <span>City*</span>
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        <span>Postal code*</span>
+                                        <input type="text">
+                                    </label>
+                                </fieldset>
+                            </div>
+                            <div>
+                               <label>
+                                    <span>Required documents (.e.g. XYZ XYZ XYZ)</span>
+                                    <div class="custom-input-file">
+                                        <span>Upload files here</span>
+                                        <input type="file">
+                                    </div>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="btn btn-green" type="submit" value="send application">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div id="map">
-            </div>
-        </div>
-    </section>
-    <section id="contact_form">
-        <div class="wrapper">
-            <div class="text">
-                <p class="heading">
-                    Have any questions?
-                    Send us a message
-                </p>
-                <p class="bottom-text">Leave us your contact or write us some message</p>
-            </div>
-            <form action="">
-                <div class="inputs">
-                    <label>
-                        <span>Contact person</span>
-                        <input type="text" name="name">
-                    </label>
-                    <label>
-                        <span>Contact e-mail</span>
-                        <input type="text" name="email">
-                    </label>
-                    <label>
-                        <span>Contact phone</span>
-                        <input type="text" name="phone">
-                    </label>
-                </div>
-                <div class="textarea">
-                    <label>
-                        <span>Message</span>
-                        <textarea name="message" cols="30" rows="10"></textarea>
-                    </label>
-                    <div class="bottom-panel">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="antispam">
-                            <span class="mark"></span>
-                            <span class="bottom-text">Anti-spam protection</span>
-                        </label>
-                        <input type="submit" class="btn btn-green" value="SEND">
-                    </div>
-                </div>
-            </form>
         </div>
     </section>
     <footer>

@@ -30,6 +30,11 @@
     border-radius: 25px;
     @include flex-row(space-between, center);
 }
+@mixin opacity-color{
+    color: #000;
+    opacity: .5;
+    font-weight: 600;
+}
 $body_background_color:#f6f3f1;
 $primary_text_color: #CFA773;
 $secondary_text_color: #ddc8a9;
@@ -41,6 +46,7 @@ $lightgreen:#266e4b;
 $darkgreen:#165737;
 $red: #e53737;
 $gray: #929292;
+$opacity-color:#a09792;
 $f-15: 0.9375rem;
 $f-13: 0.8125rem;
 $f-12: 0.75rem;
@@ -50,7 +56,7 @@ $f-18: 1.125rem;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.3;
 }
-p, ul, h3, .row{
+p, ul, h3, .row, label{
     padding: 0;
     margin: 0;
 }
@@ -98,6 +104,9 @@ a{
 .cirlce-btn{
     border-radius: 50%;
 }
+.btn-rectangle{
+    border-radius: 0;
+}
 .btn-green{
     background-color: $green;
 }
@@ -139,117 +148,7 @@ a{
 section{
     padding: 50px 0;
 }
-.custom-input-number{
-    height: 100%;
-    @include flex-row(center,center);
-    input[type="number"]{
-        appearance: textfield;
-        width: 50%;
-        height:100%;
-        text-align: center;
-        border: 1px solid $third_bg_color;
-    }
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button
-    {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-    .increment, .decrement{
-        @include flex-row(center,center);
-        color: $primary_text_color;
-        background-color: $third_bg_color;
-        font-weight: 700;
-        width: 25%;
-        height: 100%;
-        margin-right: 1px;
-        font-size: $f-18;
-        cursor: pointer;
-        user-select: none;
-    }
-    &.out-of-stock::after{
-        content:"Not enough in stock";
-        color: $red;
-        position: absolute;
-        right: -10px;
-        width: 40px;
-        font-size: 10px;
-        line-height: 1;
-        font-weight: 600;
-    }
-}
-.switch{
-    position: relative;
-    width: 60px;
-    height: 30px;
-    background-color: $primary_bg_color;
-    border-radius: 25px;
-    input[type="checkbox"]{
-        cursor: pointer;
-        opacity: 0;
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-    }
-    .switch-body{
-        border: 2px solid $primary_bg_color;
-        border-radius: 25px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        transition: 300ms;
-        &::before{
-            content: "";
-            height: 100%;
-            width: 50%;
-            position: absolute;
-            top: 0;
-            left: 0%;
-            transition: 300ms;
-            background-color: #fff;
-            border-radius: 50%;
-        }
-    }
-    .icons{
-        >span{
-            transition: 300ms;
-        }
-        .right{
-            opacity: .3;
-        }
-    }
-    input:checked{
-        &+ .switch-body::before{
-         left: 50%;
-        }
-        &~ .icons .left{
-            opacity: .3;
-        }
-        &~ .icons .right{
-            opacity: 1;
-        }
-    }
-    .icons{
-        @include flex-row(space-between, center);
-        position: absolute;
-        top: -2px;
-        left: 2px;
-        right: 0;
-        width: 45px;
-        margin: auto;
-        height: 100%;
-    }
-}
-input[type="text"], textarea{
-    border: none;
-    width: 100%;
-    padding: 7px 15px;
-    font-weight: 600;
-    font-size: $f-12;
-}
+
 .center-mode-slider{
     .slick-slide{
         transition: 300ms;
@@ -274,5 +173,31 @@ input[type="text"], textarea{
         position: absolute;
         left:100%;
         top: 40px;
+    }
+}
+
+.pagination{
+    @include flex-row(flex-start, center);
+    span{
+        color: #000;
+        opacity: .5;
+        font-weight: 600;
+    }
+    ul{
+        padding-left: 20px;
+        display: flex;
+        li{
+            cursor: pointer;
+            @include flex-row(center, center);
+            width: 35px;
+            height: 35px;
+            color: #000;
+            opacity: .5;
+            font-weight: 600;
+            &.active{
+                background-color: $primary_bg_color;
+                opacity: 1;
+            }
+        }
     }
 }

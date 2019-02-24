@@ -1,40 +1,104 @@
 .basket-item{
-    @include flex-row(center, flex-start);
+    @include flex-row(flex-start, flex-start);
     padding: 10px 0;
-    &:not(:last-child){
-        border-bottom: 1px solid $primary_text_color;
-    }
+    width: 100%;
+    border-bottom: 1px solid #eadfcf;
     position: relative;
     .img{
         background-color: #fff;
         padding: 5px;
-        height: 50px;
-        width: 50px;
+        height: 240px;
+        width: 220px;
         @include flex-row(center, center);
         img{
-            max-width: 40px;
-            max-height: 40px;
+            max-width: 220px;
+            max-height: 220px;
         }
     }
+    .custom-input-number{
+        margin: 5px 0;
+        height: 40px;
+        width: 100px;
+    }
     .text{
-        padding-left: 15px;
         .name{
-            font-size: $f-12;
+            font-size: $f-18;
+            margin-bottom: 5px;
             font-weight: 600;
         }
-        .custom-input-number{
-            margin: 5px 0;
-            height: 30px;
-            width: 80px;
-        }
-        .price{
-            font-size: $f-16;
-            font-weight: 600;
+        .subtext{
+            color: $primary_text_color;
+            font-size: 14px;
         }
     }
     .btn-remove{
         position: absolute;
         bottom: 10px;
         right: 0;
+    }
+}
+.dropdown{
+    .basket-item{
+        justify-content: center;
+        &:last-child{
+            border-bottom: 0;
+        }
+        .img{
+            height: 50px;
+            width: 50px;
+            img{
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+        .text{
+            padding-left: 15px;
+            .name{
+                font-size: $f-12;
+            }
+            .custom-input-number{
+                margin: 5px 0;
+                height: 40px;
+                width: 80px;
+            }
+            .price{
+                font-size: $f-16;
+            }
+        }
+    }
+}
+#basket_page{
+    .basket-item{
+        @extend .row;
+        >div:not(.img){
+            padding-top: 30px;
+        }
+        .img{
+            @extend .col-lg-3;
+        }
+        .text{
+            padding-left: 25px;
+            @extend .col-lg-4;
+        }
+        .price{
+            @extend .col-lg-2;
+            @include flex-row(center, center);
+            font-weight: 600;
+            .switch{
+                margin-left: 20px;
+            }
+        }
+        .quantity{
+            padding-top: 20px!important;
+            @extend .col-lg-2;
+            .custom-input-number{
+                margin: auto;
+            }
+        }
+        .subtotal{
+            text-align: center;
+            @extend .col-lg-1;
+            font-weight: 600;
+        }
     }
 }
