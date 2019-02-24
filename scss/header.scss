@@ -10,20 +10,6 @@ header{
      #logo{
          margin-bottom: 10px;
         }
-    #store_list{
-        max-width: 500px;
-        margin: auto;
-        label{
-            @include round-horizontal-box($body_background_color);
-            @extend .select;
-            background-image: url('../../assets/img/icons/home.png');
-            background-repeat: no-repeat;
-            background-position: center left 20px;
-            select{
-                margin-left: 20px;
-            }
-        }
-    }
     #account{
         margin-left: 50px;
         @include flex-row(center, center);

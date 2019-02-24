@@ -9,6 +9,25 @@ basketDropdownTrigger.addEventListener('click',function(){
     }
 })
 
+var differentCardTrigger = document.querySelector('#different_card_trigger input');
+var differentCardBody = document.querySelector('#different_card_body');
+var allCards = document.querySelectorAll('.card-choose-radio');
+
+function toggledifferentCardBody(){
+    if(differentCardTrigger.checked === true){
+        differentCardBody.classList.add('active');
+    }else{
+        differentCardBody.classList.remove('active');
+    }
+}
+toggledifferentCardBody();
+for(var i = 0; i<allCards.length; i++){
+    allCards[i].addEventListener('change',function(){
+        toggledifferentCardBody();
+    })
+}
+
+
 $('.carousel').slick({
     dots:true,
     arrows:false,

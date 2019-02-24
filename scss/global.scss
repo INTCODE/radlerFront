@@ -122,6 +122,11 @@ a{
     width: 20px;
     cursor: pointer;
 }
+.btn-bin{
+    padding: 0;
+    background:none;
+    border: none;
+}
 .btn-gold{
     color: $primary_text_color;
     background-color: $primary_bg_color;

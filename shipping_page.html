@@ -45,7 +45,6 @@
                                 </g>
                             </g>
                         </svg>
-
                             </div>
                             <span class="price">£853,24</span>
                             <span class="amount">2 items</span>
@@ -91,95 +90,156 @@
             </div>
         </div>
     </header>
-    <section id="signin_page">
-        <div class="wrapper right-full">
-            <nav>
-                <ul>
-                    <li class="active">
-                        <a href="">Beer & Cider</a>
-                    </li>
-                    <li>
-                        <a href="">Spirits</a>
-                    </li>
-                    <li>
-                        <a href="">Soft drinks</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="signin-container">
-                <div class="left">
-                    <div class="signin">
-                        <p class="heading">Sign in</p>
-                        <p class="subtext">If you have an account, sign in your email adress</p>
-                        <form action="" id="signin_form">
+    <section id="shipping_page">
+        <div class="wrapper">
+            <a class="return-arrow" href="#"></a>
+            <p class="heading">Shipping & Payment</p>
+            <div class="shipping-container">
+                <div class="shipping">
+                    <p class="head">Shipping Address</p>
+                    <div class="store-list">
+                        <label>
+                            Store:
+                            <select name="store" id="store_select">
+                                <option value="1">
+                                    21340   |   John Lethron - Grace's Grocieries
+                                </option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="data-cols">
+                        <div>
+                            <p class="title">Street Address</p>
+                            <p>Temporary Street 623 41/53</p>
+                        </div>
+                        <div>
+                            <p class="title">City</p>
+                            <p>London</p>
+                        </div>
+                        <div>
+                            <p class="title">Province</p>
+                            <p>Great London</p>
+                        </div>
+                        <div>
+                            <p class="title">Zip/Postal Code</p>
+                            <p>429-423</p>
+                        </div>
+                    </div>
+                    <p class="head">Payment Method</p>
+                    <div class="choose">
+                        <p class="heading">Pay by card</p>
+                        <label class="card-choose-radio">
+                            <input type="radio" name="card-choose">
+                            <div class="body">
+                                <div class="img">
+                                    <img src="./assets/img/icons/mastercard.png" alt="">
+                                </div>
+                                <p class="company">MasterCard</p>
+                                <p class="end">2341</p>
+                                <p class="exp">Exp 02/20</p>
+                                <button class="btn-bin">
+                                    <img src="./assets/img/icons/bin.png" alt="">
+                                </button>
+                            </div>
+                        </label>
+                        <label class="card-choose-radio">
+                            <input type="radio" name="card-choose">
+                            <div class="body">
+                                <div class="img">
+                                    <img src="./assets/img/icons/visa.png" alt="">
+                                </div>
+                                <p class="company">Visa</p>
+                                <p class="end">3463</p>
+                                <p class="exp">Exp 04/20</p>
+                                <button class="btn-bin">
+                                    <img src="./assets/img/icons/bin.png" alt="">
+                                </button>
+                            </div>
+                        </label>
+                        <label class="card-choose-radio" id="different_card_trigger">
+                            <input type="radio" name="card-choose">
+                            <div class="body">
+                                <p>Pay with a different card</p>
+                            </div>
+                        </label>
+                        <div id="different_card_body">
                             <label>
-                                <span>E-mail address*</span>
+                                <span>Card number</span>
                                 <input type="text">
                             </label>
                             <label>
-                                <span>Password*</span>
-                                <input type="password">
+                                <span>Expire date</span>
+                                <input type="text">
+                                <span>/</span>
+                                <input type="text">
                             </label>
-                            <div class="bottom">
-                                <a href="#">Forgot your password?</a>
-                                <span>* Required fields</span>
-                            </div>
-                            <input type="submit" class="btn btn-green" value="sing in to account">
-                        </form>
+                            <label>
+                                <span>CVV</span>
+                                <input type="text">
+                            </label>
+                            <label class="custom-checkbox">
+                                <span class="bottom-text">Save card for next time</span>
+                                <input type="checkbox" name="save_card">
+                                <span class="mark"></span>
+                            </label>
+                        </div>
+                        <div class="trusted">
+                            <span>You are a trusted customer</span>
+                            <label class="custom-checkbox">
+                                <span class="bottom-text">Pay later</span>
+                                <input type="checkbox" name="pay_later">
+                                <span class="mark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="total-box">
+                        <div>
+
+                            <p>
+                                <span>Order</span>
+                                <span>£840.74</span>
+                            </p>
+                            <p>
+                                <span>Delivery</span>
+                                <span>£12.54</span>
+                            </p>
+                            <p class="total">
+                                <span>Order Total</span>
+                                <span>£853.24</span>
+                            </p>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-green">Confirm order</a>
+                        </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="signup">
-                        <p class="heading">Are you new?</p>
-                        <p class="subtext">You can complete the application. If we consider it positively, you will receive an account.</p>
-                        <form action="" id="signup_form">
-                            <div>
-                                <label>
-                                    <span>Company name*</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>E-mail address*</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Company address*</span>
-                                    <input type="text">
-                                </label>
+                <div class="summary">
+                    <div>
+
+                        <p class="heading">Summary</p>
+                        <div class="summary-cart dropdown">
+                        <p class="top"><span>2 Items in Cart</span> <span><img src="./assets/img/icons/drop-down-arrow.svg" alt=""></span></p>
+                        <div class="basket-item">
+                            <div class="img">
+                                <img src="./assets/img/product_img.png" alt="">
                             </div>
-                            <div>
-                                <label>
-                                    <span>Company representative*</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Phone number*</span>
-                                    <input type="text">
-                                </label>
-                                <fieldset>
-                                    <label>
-                                        <span>City*</span>
-                                        <input type="text">
-                                    </label>
-                                    <label>
-                                        <span>Postal code*</span>
-                                        <input type="text">
-                                    </label>
-                                </fieldset>
+                            <div class="text">
+                                <p class="name">Perła Chmielowa Strong 4x350ml</p>
+                                <p class="qty">QTY: 1</p>
+                                <p class="price">£340</p>
                             </div>
-                            <div>
-                               <label>
-                                    <span>Required documents (.e.g. XYZ XYZ XYZ)</span>
-                                    <div class="custom-input-file">
-                                        <span>Upload files here</span>
-                                        <input type="file">
-                                    </div>
-                                </label>
+                        </div>
+                        <div class="basket-item">
+                            <div class="img">
+                                <img src="./assets/img/product_img.png" alt="">
                             </div>
-                            <div>
-                                <input class="btn btn-green" type="submit" value="send application">
+                            <div class="text">
+                                <p class="name">Perła Chmielowa Strong 4x350ml</p>
+                                <p class="qty">QTY: 1</p>
+                                <p class="price">£340</p>
                             </div>
-                        </form>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,20 @@ input[type="text"], input[type="password"], textarea{
     font-weight: 600;
     font-size: $f-12;
 }
+.store-list{
+    max-width: 500px;
+    margin: auto;
+    label{
+        @include round-horizontal-box($body_background_color);
+        @extend .select;
+        background-image: url('../../assets/img/icons/home.png');
+        background-repeat: no-repeat;
+        background-position: center left 20px;
+        select{
+            margin-left: 20px;
+        }
+    }
+}
 .custom-input-number{
     height: 100%;
     @include flex-row(center,center);
@@ -133,13 +147,16 @@ input[type="text"], input[type="password"], textarea{
     cursor: pointer;
     input[type="checkbox"]{
         opacity: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
         &:checked + .mark::after{
             content: url('../../assets/img/icons/check.svg');
             height: 10px;
             width: 10px;
             display: inline-block;
             position: absolute;
-            top: 0;
+            top: 1px;
             left: 0;
             right: 0;
             margin:auto;
@@ -194,5 +211,57 @@ input[type="text"], input[type="password"], textarea{
         top: 0;
         left: 0;
         opacity: 0;
+    }
+}
+.card-choose-radio{
+    display: block;
+    margin: 10px 0;
+    max-width: 420px;
+    position: relative;
+    cursor: pointer;
+    input[type="radio"]{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:checked + .body{
+            background-color: #fff;
+            &::before{
+                display: block;
+                width: 10px;
+                height: 10px;
+                content: url('../../assets/img/icons/check.svg');
+                position: absolute;
+                top: 10px;
+                left: 20px;
+            }
+        }
+    }
+    .body{
+        padding: 10px 25px 10px 50px;
+        border-radius: 25px;
+        min-height: 40px;
+        @extend .row;
+        .img{
+            @extend .col-sm-2;
+        }
+        .company{
+            @extend .col-sm-3;
+        }
+        .end{
+            @extend .col-sm-2;
+        }
+        .exp{
+            @extend .col-sm-3;
+        }
+        .btn-bin{
+            @extend .col-sm-2;
+        }
+        p{
+            font-size: $f-12;
+            color: $opacity-color;
+            display: flex;
+            align-items: center;
+        }
     }
 }
