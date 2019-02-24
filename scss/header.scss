@@ -36,14 +36,14 @@ header{
             }
         }
         #basket{
-            user-select: none;
-            cursor: pointer;
             position: relative;
             @include round-horizontal-box($body_background_color);
             @include flex-column(center, center);
             margin: 0 25px;
             padding: 8px;
             .top{
+                user-select: none;
+                cursor: pointer;
                 z-index: 4;
                 @include flex-row(center, center);
                 .icon{

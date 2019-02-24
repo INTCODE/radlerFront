@@ -1,6 +1,7 @@
 //BASKET OPEN
+var basketDropdownTrigger = document.querySelector('header #basket .top');
 var basketDropdown = document.querySelector('header #basket');
-basketDropdown.addEventListener('click',function(){
+basketDropdownTrigger.addEventListener('click',function(){
     if(basketDropdown.classList.contains('active')){
         basketDropdown.classList.remove('active')
     }else{

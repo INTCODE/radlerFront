@@ -7405,8 +7405,6 @@ header {
         header .wrapper #account #my_account img {
           padding-right: 20px; }
       header .wrapper #account #basket {
-        user-select: none;
-        cursor: pointer;
         position: relative;
         background-color: #f6f3f1;
         border-radius: 25px;
@@ -7421,6 +7419,8 @@ header {
         margin: 0 25px;
         padding: 8px; }
         header .wrapper #account #basket .top {
+          user-select: none;
+          cursor: pointer;
           z-index: 4;
           display: flex;
           flex-direction: row;
