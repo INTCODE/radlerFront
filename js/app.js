@@ -20,11 +20,14 @@ function toggledifferentCardBody(){
         differentCardBody.classList.remove('active');
     }
 }
-toggledifferentCardBody();
-for(var i = 0; i<allCards.length; i++){
-    allCards[i].addEventListener('change',function(){
-        toggledifferentCardBody();
-    })
+
+if(differentCardBody !== null){
+    toggledifferentCardBody();
+    for(var i = 0; i<allCards.length; i++){
+        allCards[i].addEventListener('change',function(){
+            toggledifferentCardBody();
+        })
+    }
 }
 
 
