@@ -172,7 +172,7 @@ section{
     position: relative;
     &::after{
         content: "";
-        width:  calc((100vw - 100%) / 2);
+        width:  calc((100vw - 100% - 18px) / 2);
         height: calc(100% - 40px);
         background-color: $body_background_color;
         position: absolute;
@@ -199,7 +199,12 @@ section{
             color: #000;
             opacity: .5;
             font-weight: 600;
+            transition: 300ms;
             &.active{
+                background-color: $primary_bg_color;
+                opacity: 1;
+            }
+            &:hover{
                 background-color: $primary_bg_color;
                 opacity: 1;
             }

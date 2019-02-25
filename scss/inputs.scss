@@ -243,19 +243,19 @@ input[type="text"], input[type="password"], textarea{
         min-height: 40px;
         @extend .row;
         .img{
-            @extend .col-sm-2;
+            @extend .col-2;
         }
         .company{
-            @extend .col-sm-3;
+            @extend .col-3;
         }
         .end{
-            @extend .col-sm-2;
+            @extend .col-2;
         }
         .exp{
-            @extend .col-sm-3;
+            @extend .col-3;
         }
         .btn-bin{
-            @extend .col-sm-2;
+            @extend .col-2;
         }
         p{
             font-size: $f-12;

@@ -1,7 +1,7 @@
 #basket_page{
     .heading{
         font-size: 32px;
-    }    
+    }
     .wrapper{
         position: relative;
         .return-arrow{
@@ -14,6 +14,8 @@
                 padding: 0 120px 0 0;
                 .head{
                     @extend .row;
+                    @extend .d-lg-flex;
+                    @extend .d-xs-none;
                     padding: 15px 0;
                     border-bottom: 1px solid #eadfcf;
                     >span{
@@ -56,7 +58,7 @@
                         text-align: center;
                         font-size: 14px;
                         color: #a09792;
-                        
+
                     }
                     .borders{
                         margin: 20px 0 15px;
@@ -84,7 +86,27 @@
                     font-size: $f-16;
                     font-weight: 600;
                 }
-            }   
+            }
+        }
+    }
+}
+
+@media (max-width:991px){
+    #basket_page{
+        .wrapper{
+            .heading{
+                text-align: center;
+            }
+            >div{
+                .basket-list{
+                    padding: 0 20px;
+                }
+            }
+            .bottom{
+                label{
+                    margin: auto;
+                }
+            }
         }
     }
 }

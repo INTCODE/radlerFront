@@ -88,6 +88,11 @@
                         }
                     }
                 }
+                #different_card_trigger{
+                    p{
+                        padding-left: 15px;
+                    }
+                }
                 .trusted{
                     background-color: $third_bg_color;
                     background-image: url('../../assets/img/icons/trusted.png');
@@ -116,6 +121,7 @@
                 }
             }
             .total-box{
+                padding-top: 20px;
                 @extend .row;
                 div:first-child{
                     @extend .col-lg-8;
@@ -158,6 +164,72 @@
                         justify-content: flex-start;
                     }
                 }
+            }
+        }
+    }
+}
+@media (max-width:991px){
+    #shipping_page{
+        padding: 30px 20px;
+        .heading{
+            text-align: center;
+        }
+        .shipping-container{
+            .shipping{
+                order: 2;
+                padding: 0;
+                .store-list{
+                    margin: 30px auto;
+                }
+                .data-cols{
+                    >div{
+                        margin: 7.5px auto;
+                        text-align: center;
+                    }
+                }
+                .choose{
+                    .card-choose-radio{
+                        margin: 10px auto;
+                    }
+                    #different_card_body{
+                        padding-left: 0;
+                    }
+                }
+                .total-box{
+                    >div{
+                        p{
+                            margin: auto;
+                        }
+                    }
+                    .btn{
+                        margin-top: 15px;
+                        width: 100%;
+                    }
+                }
+            }
+            .summary{
+                padding: 0;
+                order: 1;
+                margin: 15px 0;
+            }
+        }
+    }
+}
+@media (max-width:685px){
+    #shipping_page .shipping-container .shipping{
+        .choose{
+
+            #different_card_body{
+                flex-direction: column;
+                label{
+                    margin: 7.5px auto;
+                    span{
+                        text-align: center;
+                    }
+                }
+            }
+            .trusted{
+                flex-direction: column;
             }
         }
     }

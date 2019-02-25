@@ -86,3 +86,16 @@
     z-index: 2;
     cursor: pointer;
 }
+@media (max-width:991px){
+    #product_page{
+        .product-body{
+            .details{
+                padding: 30px;
+            }
+            .panel{
+                padding: 20px 0;
+                margin: 15px auto;
+            }
+        }
+    }
+}

@@ -9,6 +9,7 @@ basketDropdownTrigger.addEventListener('click',function(){
     }
 })
 
+// DIFFERENT CARD
 var differentCardTrigger = document.querySelector('#different_card_trigger input');
 var differentCardBody = document.querySelector('#different_card_body');
 var allCards = document.querySelectorAll('.card-choose-radio');
@@ -30,13 +31,24 @@ if(differentCardBody !== null){
     }
 }
 
+// FILTERS DROPDOWN
+var allFiltersDropdown = document.querySelectorAll('.filters-item .top');
+for(var i = 0; i<allFiltersDropdown.length; i++){
+    allFiltersDropdown[i].addEventListener('click', function(){
+        if(this.classList.contains('active')){
+            this.classList.remove('active');
+        }else{
+            this.classList.add('active');
+        }
+    })
+}
 
 $('.carousel').slick({
     dots:true,
     arrows:false,
     autoplay:true,
     autoplaySpeed:5000,
-    
+
 });
 
 $('.center-mode-slider').slick({
