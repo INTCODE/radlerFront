@@ -86,9 +86,8 @@ $('.gallery .big').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.gallery .big',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    customPaging: 0,
   });
 
 function customInputNumberInit(){

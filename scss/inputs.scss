@@ -16,6 +16,13 @@ input[type="text"], input[type="password"], textarea{
         background-position: center left 20px;
         select{
             margin-left: 20px;
+            color: $opacity-color;
+            option{
+                color: $opacity-color;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }

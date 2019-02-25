@@ -211,3 +211,25 @@ section{
         }
     }
 }
+.slick-arrow{
+    position: absolute;
+    top: 40%;
+    border: none;
+    font-size: 0;
+    display: block;
+    background:none;
+    background-image: url('../../assets/img/icons/angle-down.svg');
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.slick-prev{
+    left: 0;
+    transform: rotate(90deg);
+}
+.slick-next{
+    right:0;
+    transform: rotate(-90deg);
+}
