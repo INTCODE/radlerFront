@@ -14,8 +14,8 @@
                 padding: 0 120px 0 0;
                 .head{
                     @extend .row;
+                    @extend .d-none;
                     @extend .d-lg-flex;
-                    @extend .d-xs-none;
                     padding: 15px 0;
                     border-bottom: 1px solid #eadfcf;
                     >span{

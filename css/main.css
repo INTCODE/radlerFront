@@ -485,8 +485,8 @@ pre {
 
 .col-1, .col-2, .card-choose-radio .body .img, .card-choose-radio .body .end, .card-choose-radio .body .btn-bin, .col-3, .card-choose-radio .body .company, .card-choose-radio .body .exp, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, footer .wrapper .column, footer .wrapper .about, footer .wrapper .contact, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, #basket_page .basket-item .subtotal, #basket_page .wrapper > div .basket-list .head span:nth-child(4), .col-lg-2, #product_page .product-body .panel, #see_all_products .wrapper .btn-box, #basket_page .basket-item .price, #basket_page .basket-item .quantity, #product_list .list-container .sidebar, #basket_page .wrapper > div .basket-list .head span:nth-child(2), #basket_page .wrapper > div .basket-list .head span:nth-child(3), #signin_page .signin-container .left, .col-lg-3, #basket_page .basket-item .img, #contact_form .wrapper .text, #basket_page .wrapper > div .panel, #shipping_page .shipping-container .shipping .data-cols > div, #shipping_page .shipping-container .summary, .col-lg-4, nav ul li, #product_page .product-body .gallery, #basket_page .basket-item .text, #contact_form .wrapper form .inputs, #shipping_page .shipping-container .shipping .total-box div:last-child, .col-lg-5, #popular_products .wrapper #bestsellers, #see_all_products .wrapper p, #contact .wrapper #map, .col-lg-6, #product_page .product-body .details, #contact .wrapper #contact-info .left, #contact .wrapper #contact-info .right, #signin_page .signin-container .right form > div, .col-lg-7, #popular_products .wrapper #most_viewed, #contact .wrapper #contact-info, #basket_page .wrapper > div .basket-list .head span:nth-child(1), .col-lg-8, #contact_form .wrapper form, #contact_form .wrapper form .textarea, #shipping_page .shipping-container .shipping .total-box div:first-child, .col-lg-9, #basket_page .wrapper > div .basket-list, #shipping_page .shipping-container .shipping, .col-lg-10, #product_list .list-container .product-grid, #signin_page .signin-container .right, .col-lg-11, .col-lg-12, .col-lg,
+.col-sm-auto, .col-md-1, #basket_page .basket-item .subtotal, .col-md-2, #basket_page .basket-item .price, #basket_page .basket-item .quantity, .col-md-3, .col-md-4, #basket_page .basket-item .text, .col-md-5, .col-md-6, footer .wrapper .column, footer .wrapper .about, footer .wrapper .contact, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, #basket_page .wrapper > div .basket-list .head span:nth-child(4), .col-lg-2, #product_page .product-body .panel, #see_all_products .wrapper .btn-box, #product_list .list-container .sidebar, #basket_page .wrapper > div .basket-list .head span:nth-child(2), #basket_page .wrapper > div .basket-list .head span:nth-child(3), #signin_page .signin-container .left, .col-lg-3, #basket_page .basket-item .img, #contact_form .wrapper .text, #basket_page .wrapper > div .panel, #shipping_page .shipping-container .shipping .data-cols > div, #shipping_page .shipping-container .summary, .col-lg-4, nav ul li, #product_page .product-body .gallery, #contact_form .wrapper form .inputs, #shipping_page .shipping-container .shipping .total-box div:last-child, .col-lg-5, #popular_products .wrapper #bestsellers, #see_all_products .wrapper p, #contact .wrapper #map, .col-lg-6, #product_page .product-body .details, #contact .wrapper #contact-info .left, #contact .wrapper #contact-info .right, #signin_page .signin-container .right form > div, .col-lg-7, #popular_products .wrapper #most_viewed, #contact .wrapper #contact-info, #basket_page .wrapper > div .basket-list .head span:nth-child(1), .col-lg-8, #contact_form .wrapper form, #contact_form .wrapper form .textarea, #shipping_page .shipping-container .shipping .total-box div:first-child, .col-lg-9, #basket_page .wrapper > div .basket-list, #shipping_page .shipping-container .shipping, .col-lg-10, #product_list .list-container .product-grid, #signin_page .signin-container .right, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
   position: relative;
@@ -739,16 +739,16 @@ pre {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%; }
-  .col-md-1 {
+  .col-md-1, #basket_page .basket-item .subtotal {
     flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  .col-md-2 {
+  .col-md-2, #basket_page .basket-item .price, #basket_page .basket-item .quantity {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4 {
+  .col-md-4, #basket_page .basket-item .text {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-md-5 {
@@ -839,16 +839,16 @@ pre {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%; }
-  .col-lg-1, #basket_page .basket-item .subtotal, #basket_page .wrapper > div .basket-list .head span:nth-child(4) {
+  .col-lg-1, #basket_page .wrapper > div .basket-list .head span:nth-child(4) {
     flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  .col-lg-2, #product_page .product-body .panel, #see_all_products .wrapper .btn-box, #basket_page .basket-item .price, #basket_page .basket-item .quantity, #product_list .list-container .sidebar, footer .wrapper .contact, #basket_page .wrapper > div .basket-list .head span:nth-child(2), #basket_page .wrapper > div .basket-list .head span:nth-child(3), #signin_page .signin-container .left {
+  .col-lg-2, #product_page .product-body .panel, #see_all_products .wrapper .btn-box, #product_list .list-container .sidebar, footer .wrapper .contact, #basket_page .wrapper > div .basket-list .head span:nth-child(2), #basket_page .wrapper > div .basket-list .head span:nth-child(3), #signin_page .signin-container .left {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .col-lg-3, #basket_page .basket-item .img, #contact_form .wrapper .text, footer .wrapper .column, #basket_page .wrapper > div .panel, #shipping_page .shipping-container .shipping .data-cols > div, #shipping_page .shipping-container .summary {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-lg-4, nav ul li, #product_page .product-body .gallery, #basket_page .basket-item .text, #contact_form .wrapper form .inputs, footer .wrapper .about, #shipping_page .shipping-container .shipping .total-box div:last-child {
+  .col-lg-4, nav ul li, #product_page .product-body .gallery, #contact_form .wrapper form .inputs, footer .wrapper .about, #shipping_page .shipping-container .shipping .total-box div:last-child {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-lg-5, #popular_products .wrapper #bestsellers, #see_all_products .wrapper p, #contact .wrapper #map {
@@ -4720,7 +4720,7 @@ button.bg-dark:focus {
   clear: both;
   content: ""; }
 
-.d-none {
+.d-none, #basket_page .wrapper > div .basket-list .head {
   display: none !important; }
 
 .d-inline {
@@ -4748,7 +4748,7 @@ button.bg-dark:focus {
   display: inline-flex !important; }
 
 @media (min-width: 576px) {
-  .d-sm-none, #basket_page .wrapper > div .basket-list .head {
+  .d-sm-none {
     display: none !important; }
   .d-sm-inline {
     display: inline !important; }
@@ -7895,6 +7895,32 @@ header {
 #basket_page .basket-item .subtotal {
   text-align: center;
   font-weight: 600; }
+
+@media (max-width: 991px) {
+  #basket_page .basket-item .text::before {
+    content: 'Item';
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #a09792; }
+  #basket_page .basket-item .price::before {
+    content: 'Price';
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #a09792; }
+  #basket_page .basket-item .quantity::before {
+    content: 'Quantity';
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #a09792; }
+  #basket_page .basket-item .subtotal::before {
+    content: 'Subtotal';
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #a09792; } }
 
 .gallery .big {
   padding: 30px; }

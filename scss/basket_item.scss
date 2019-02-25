@@ -82,10 +82,10 @@
         }
         .text{
             padding-left: 25px;
-            @extend .col-lg-4;
+            @extend .col-md-4;
         }
         .price{
-            @extend .col-lg-2;
+            @extend .col-md-2;
             @include flex-row(center, center);
             font-weight: 600;
             .switch{
@@ -94,15 +94,50 @@
         }
         .quantity{
             padding-top: 20px!important;
-            @extend .col-lg-2;
+            @extend .col-md-2;
             .custom-input-number{
                 margin: auto;
             }
         }
         .subtotal{
             text-align: center;
-            @extend .col-lg-1;
+            @extend .col-md-1;
             font-weight: 600;
+        }
+    }
+}
+
+@media (max-width:991px){
+    #basket_page{
+        .basket-item{
+            .text::before{
+                content: 'Item';
+                display: block;
+                text-align: center;
+                font-size:$f-12;
+                color: $opacity-color;
+            }
+            .price::before{
+                content: 'Price';
+                display: block;
+                text-align: center;
+                font-size:$f-12;
+                color: $opacity-color;
+            }
+            .quantity::before{
+                content: 'Quantity';
+                display: block;
+                text-align: center;
+                font-size:$f-12;
+                color: $opacity-color;
+            }
+            .subtotal::before{
+                content: 'Subtotal';
+                display: block;
+                text-align: center;
+                font-size:$f-12;
+                color: $opacity-color;
+            }
         }
     }
 }
